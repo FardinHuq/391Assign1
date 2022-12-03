@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 6em;
+  align-items: center;
+  background-color: rgb(11, 7, 75);
+  top: 0;
+  z-index: 999;
+  height: 60px;
+  width: 100vw;
+  position: sticky;
+}
+.navbar h6 {
+  color: white;
+  font-size: 1.3rem;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+.navbar ul li a:hover {
+  background-color: whitesmoke;
+  color: black;
+  box-shadow: 0 0 10px white;
+}
+
+.hero-section {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 300px;
+  width: 60%;
+  background: whitesmoke;
+  border-radius: 16px;
+  padding: 30px 30px 25px;
+  transition: 250ms;
+}
+
+.package {
+  width: 100vw;
+  background-color: rgb(96, 108, 173);
+  display: flex;
+  flex-direction: column;
+}
+
+.card header {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+.card .content {
+  margin: 35px 0;
+}
+.content .quote-area {
+  display: flex;
+  justify-content: center;
+}
+.quote-area.quote {
+  font-size: 23px;
+  text-align: center;
+  word-break: break-all;
+}
+.quote-area i {
+  font-size: 24px;
+}
+.quote-area i:first-child {
+  margin: 3px 9px 0 0;
+}
+.quote-area i:last-child {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 3px 9px;
+}
+.content .author {
+  display: flex;
+  margin-top: 20px;
+  font-style: italic;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+.author span:first-child {
+  margin: -8px 5px 0 0;
+  font-family: sans-serif;
+}
+.feature {
+  margin-top: 16px;
+  display: flex;
+}
+.feature button, .quote button {
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-style: 16px;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background: rgb(11, 7, 75);
+}
+
+.controls {
+  margin: 0px 8px;
+}
+
+.controls > button {
+  border: 1.6px solid white;
+}
+
+.controls > button:nth-child(1) {
+  background-color: limegreen;
+}
+
+.controls > button:nth-child(2) {
+  background-color: yellow;
+  color: black;
+}
+
+.controls > button:nth-child(3) {
+  background-color: skyblue;
+}
+
+.controls > button:nth-child(4) {
+  background-color: orange;
+}
+
+button.pleasewait {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+input, select {
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-style: 16px;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background: rgb(11, 7, 75);
+}
+
+.output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  color: #555;
+  font-size: 20px;
+}
+
+#magic {
+  resize: none;
+  height: 300px;
+}
+
+#magic-section > .card {
+  min-height: 600px;
+}
+
+#magic-section > .card > .content > .quote-area {
+  display: flex;
+  flex-direction: column;
+}
+
+#magic {
+  margin-bottom: 16px;;
+}
+
+#magic-buttons > button {
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-style: 16px;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background: rgb(11, 7, 75);
+}
