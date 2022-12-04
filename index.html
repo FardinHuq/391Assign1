@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE391 Assignment 02</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body onload="randomQuote()">
+    <nav class="navbar">
+      <h6>Web Fun</h6>
+      <ul>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#hero">Hero Converter</a></li>
+        <li><a href="#maxmin">Max-Min</a></li>
+        <li><a href="#magic-section">Magic</a></li>
+      </ul>
+    </nav>
+
+    <div class="package">
+      <div class="hero-section" id="quotes">
+        <div class="card">
+          <header>Quotes</header>
+          <div class="content">
+            <div class="quote-area">
+              <i class="fas fa-quote-left"></i>
+              <p class="quote">
+              </p>
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="author">
+              <span></span>
+              <span class="name"></span>
+            </div>
+            <div class="feature">
+              <button>New Quote</button>
+              <div class="controls">
+                <button>Lime Green</button>
+                <button>Yellow</button>
+                <button>Sky Blue</button>
+                <button>Orange</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-section" id="hero">
+        <div class="card">
+          <header>Hero Converter</header>
+          <div class="content">
+            <div class="quote-area">
+              <p class="quote">
+               <input type="text" placeholder="Enter Value" id="converter-input">
+               <select name="type" id="conversionType">
+                 <option value="to_pound">Convert to Pound</option>
+                 <option value="to_kg">Convert to Kilo Gram</option>
+               </select>
+               <button id="convert">CONVERT</button>
+              </p>
+            </div>
+            <div class="output">Result</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-section" id="maxmin">
+        <div class="card">
+          <header>Min Max</header>
+          <div class="content">
+            <div class="quote-area">
+              <p class="quote">
+                <input type="text" id="minmax-input" placeholder="Series of Number">
+              </p>
+            </div>
+            <div class="minmax-output">
+              <b>Max :&nbsp;</b> <span id="max-output"></span><br>
+              <b>Min :&nbsp;</b> <span id="min-output"></span><br>
+              <b>Sum :&nbsp;</b> <span id="sum-output"></span><br>
+              <b>Avg. :&nbsp;</b> <span id="avg-output"></span><br>
+              <b>Reverse :&nbsp;</b> <span id="rev-output"></span><br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-section" id="magic-section">
+        <div class="card">
+          <header>Magic Box</header>
+          <div class="content">
+            <div class="quote-area">
+              <textarea id="magic" type="text" rows="15" cols="54"></textarea>
+              <div id="magic-buttons">
+                  <button onclick="clearAll()" type="button" id="clear">Clear it</button>
+                  <button onclick="capitalize()" type="button" id="caps" value="OFF">Capitalize</button>
+                  <button onclick="sortLines()" type="button" id="sort">Sort</button>
+                  <button onclick="reverseLines()" type="button" id="reverse-magic">Reverse</button>
+                  <button onclick="stripBlank()" type="button" id="strip">Strip Blank</button>
+                  <button onclick="addLineNumbers()" type="button" id="addNum">Add Numbers</button>
+                  <button onclick="shuffle()" type="button" id="shuffle">Shuffle</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
